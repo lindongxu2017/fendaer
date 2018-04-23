@@ -1,0 +1,139 @@
+.text-align-c {
+    text-align: center;
+}
+.title-custom {
+    display: inline-block;
+    text-align: center;
+    font-size: 0;
+}
+.title-custom p {
+    font-size: 28px;
+    color: #333;
+}
+.title-custom p:last-child {
+    font-size: 13px;
+    color: #848484;
+    position: relative;
+}
+.title-custom p.subtitle:last-child:before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 1px;
+    top: 7px;
+    left: -4px;
+    background: #848484;
+}
+.title-custom p.subtitle:last-child:after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 1px;
+    top: 7px;
+    right: -4px;
+    background: #848484;
+}
+.topNav ul {
+    float: right;
+    font-size: 0;
+    margin-top: 30px;
+}
+.topNav ul li {
+    display: inline-block;
+    font-size: 16px;
+    color: #989898;
+    margin-left: 45px;
+    cursor: pointer;
+    user-select: none;
+}
+.topNav ul li.active {
+    color: #E76717;
+    position: relative;
+}
+.topNav ul li.active:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -9px;
+    background-color: #E76717;
+}
+.side {
+    position: fixed;
+    right: 30px;
+    margin-top: 47px;
+}
+.side > div {
+    margin-bottom: 7px;
+}
+.footer {
+    padding-top: 56px;
+    padding-bottom: 100px;
+    background-color: #3A3F42;
+}
+.footer .form {
+    font-size: 0;
+}
+.footer .form input {
+    height: 52px;
+    font-size: 16px;
+    border: 0;
+    border: 1px solid #4E5355;
+    border-right: 0;
+    background: none;
+    background-color: #3A3F42;
+    display: inline-block;
+    box-sizing: border-box;
+    outline: none;
+    text-indent: 30px;
+    color: #A9A9A9;
+}
+.footer .form input:nth-child(1) {
+    width: 225px;
+}
+.footer .form input:nth-child(2) {
+    width: 249px;
+}
+.footer .form input:nth-child(3) {
+    width: 523px;
+}
+.footer .form .getOffer {
+    width: 172px;
+    height: 52px;
+    border: 0;
+    border: 1px solid #4E5355;
+    font-size: 16px;
+    color: #1E1919;
+    background-color: #fff;
+    display: inline-block;
+    outline: none;
+}
+.footer .info {
+    margin-top: 34px;
+    font-size: 14px;
+    color: #D1D2D3;
+    display: flex;
+}
+.footer .info > div {
+    flex: 2;
+}
+.footer .info > div.text {
+    padding-left: 80px;
+}
+.footer .info > div:last-child {
+    flex: 1;
+}
+.footer .info > div.QRcode {
+    text-align: right;
+}
+.footer .info > div.QRcode img {
+    width: 108px;
+}
+.footer .info > div p {
+    margin-bottom: 15px;
+    line-height: 1;
+}
+.footer .info > div p.title {
+    margin-bottom: 23px;
+}

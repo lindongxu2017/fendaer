@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>芬达尔</title>
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/public.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container topNav">
+            <img src="images/icon/logo.png">
+            <ul>
+                <a href="index.html"><li>首页</li></a>
+                <a href="case.html"><li class="active">案例</li></a>
+                <a href="service.html"><li>服务</li></a>
+                <a href="about.html"><li>关于我们</li></a>
+            </ul>
+        </div>
+    </nav>
+    <!-- banner -->
+    <div class="case">
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/img/1466755991.jpg">
+                </div>
+                <div class="item">
+                    <img src="images/img/1466755991.jpg">
+                </div>
+                <div class="item">
+                    <img src="images/img/1466755991.jpg">
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+        </div>
+        <!-- <p>以策略先导的技术公司</p>
+        <p>创意+设计+技术+传播</p> -->
+    </div>
+    <!-- Side -->
+    <div class="side">
+        <div><img src="images/icon/lianxi_QQ.png"></div>
+        <div><img src="images/icon/lianxi_dianhua.png"></div>
+        <div><img src="images/icon/lianxi_weixing.png"></div>
+    </div>
+    <ul class="case tab">
+        <li onclick="getlist(1)" class="active">全部</li>
+        <li onclick="getlist(2)">移动APP</li>
+        <li onclick="getlist(3)">网站</li>
+        <li onclick="getlist(4)">软件界面</li>
+        <li onclick="getlist(5)">电子商务</li>
+        <li onclick="getlist(6)">平面设计</li>
+    </ul>
+    <!-- Content -->
+    <div class="container home case">
+        <!-- section_2 -->
+        <div class="section_2 text-align-c">
+            <div class="row service-case">
+                <!-- <div class="col-md-4">
+                    <img src="images/img/demo1.jpg">
+                    <p class="title">懒熊体育</p>
+                    <p class="subtitle">懒熊体育响应式平台用户体验设计与开发</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="form">
+                <input type="text" placeholder="称呼姓名">
+                <input type="text" placeholder="联系电话">
+                <input type="text" placeholder="描述您的需求，如设计、APP、开发 、预算等">
+                <button class="getOffer">获取方案及报价</button>
+            </div>
+            <div class="info">
+                <div><img src="images/icon/LOGO_2.png"></div>
+                <div class="text">
+                    <p class="title">电话</p>
+                    <p>176-6611-7679（贺先生）</p>
+                    <p>176-6611-7679（贺先生）</p>
+                </div>
+                <div class="text">
+                    <p class="title">地址</p>
+                    <p>广东省深圳市龙华新区</p>
+                    <p>羊台新村111栋</p>
+                </div>
+                <div class="text">
+                    <p class="title">邮箱</p>
+                    <p>735348147@qq.com</p>
+                </div>
+                <div class="QRcode"><img src="images/icon/QRcode.png"></div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        function getlist (id) {
+            var data_length = Math.ceil(Math.random() * 20);
+            
+            var domHtml = '';
+            for (var i = 0; i < data_length; i++) {
+                var str =  '<div class="col-md-4">'
+                    str += '<img src="images/img/demo' + Math.ceil(Math.random() * 6) + '.jpg">'
+                    str += '<p class="title">懒熊体育</p>'
+                    str += '<p class="subtitle">懒熊体育响应式平台用户体验设计与开发</p>'
+                    str += '</div>'
+                domHtml += str
+            }
+            $('.service-case').html(domHtml)
+        }
+        getlist();
+        $('.case.tab li').click(function () {
+            $('.case.tab li').removeClass('active')
+            $(this).addClass('active')
+        })
+    </script>
+</body>
+</html>

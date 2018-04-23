@@ -1,0 +1,242 @@
+/*
+* index
+*/
+.home-banner {
+    width: 100%;
+    min-width: 1200px;
+    height: 525px;
+    background-image: url('../images/img/home_banner.jpg');
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    background-size: 100% auto;
+    text-align: center;
+}
+.home-banner .content-text {
+    display: inline-block;
+    margin-top: 50px;
+}
+.home-banner .content-text p {
+    font-size: 44px;
+    color: #fff;
+}
+.home-banner .content-text p:last-child {
+    font-size: 54px;
+}
+.home .section_1 {
+    padding-top: 38px;
+    padding-bottom: 50px;
+}
+.home .service-type {
+    margin-top: 31px;
+}
+.home .service-type > div {
+    text-align: center;
+}
+.home .service-type > div img {
+    margin-bottom: 36px;
+}
+.home .service-type > div .type-desc {
+    display: inline-block;
+}
+.home .service-type > div p {
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+}
+.home .service-type > div p.type-title {
+    font-size: 16px;
+    color: #333;
+}
+.home .section_2 {
+    padding-top: 48px;
+    padding-bottom: 72px;
+}
+.home .service-case {
+    margin-top: 24px;
+}
+.home .service-case > div {
+    margin-bottom: 23px;
+    padding: 0 1.5px;
+}
+.home .service-case > div img {
+    width: 100%;
+}
+.home .service-case > div p {
+    text-align: left;
+}
+.home .service-case > div p.title {
+    margin-top: 14px;
+    font-size: 16px;
+    color: #333;
+}
+.home .service-case > div p.subtitle {
+    font-size: 12px;
+    color: #666;
+}
+.home .section_3 {
+    padding-top: 48px;
+}
+.home .process {
+    display: flex;
+    padding-top: 39px;
+    padding-bottom: 63px;
+}
+.home .process > div {
+    flex: 1;
+}
+.home .process > div:nth-child(even) {
+    margin-top: 80px;
+}
+.home .process > div p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+.home .section_4 {
+    padding-top: 54px;
+}
+.home .section_4 img {
+    display: inline-block;
+}
+#myCarousel {
+    height: 100%;
+}
+.carousel-inner {
+    height: 100%;
+}
+.carousel-inner .item {
+    height: 100%;
+}
+/*
+* case
+*/
+.case.tab {
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    border-bottom: 1px solid #e9e9e9;
+}
+.case.tab li {
+    display: inline-block;
+    margin-right: 67px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    user-select: none;
+}
+.case.tab li.active {
+    color: #E76717;
+    position: relative;
+}
+.case.tab li.active a {
+    color: #E76717;
+}
+.case.tab li.active:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0px;
+    background-color: #E76717;
+}
+/*
+* service
+*/
+.home .service-case.service > div {
+    margin-bottom: 23px;
+    padding: 0 13px;
+}
+.home .service-case.advantage > div {
+    padding: 0 15px;
+}
+.home .service-case.advantage > div .subtitle {
+    margin-top: 19px;
+    font-size: 14px;
+    color: #333;
+}
+/*
+* about
+*/
+.about-us {
+    box-sizing: border-box;
+    text-align: left;
+    margin-top: 23px;
+    padding: 0 107px;
+    height: 40px; 
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: rgba(51,51,51,1);
+    line-height: 26px;
+}
+.album {
+    display: flex;
+    font-size: 0;
+    margin-top: 36px;
+}
+.album > div {
+    flex: 1;
+    margin: 0 1px;
+    font-size: 0;
+}
+.album > div img {
+    width: 100%;
+    margin-bottom: 2px;
+}
+.album > div img:nth-child(even) {
+    margin-bottom: 0;
+}
+.sendNeed {
+    width: 645px;
+    margin: 58px auto 0;
+    font-size: 0;
+    text-align: left;
+}
+.sendNeed input {
+    border: 0;
+    background: none;
+    box-sizing: none;
+    border: 1px solid #D9D9D9;
+    line-height: 42px;
+    font-size: 14px;
+    color: #999;
+    text-indent: 10px;
+    outline: none;
+    width: 300px;
+}
+.sendNeed input:nth-child(odd) {
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.sendNeed textarea {
+    width: 630px;
+    height: 140px;
+    font-size: 14px;
+    color: #999;
+    outline: none;
+    border: 0;
+    background: none;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    padding: 10px;
+    resize: none;
+}
+.sendNeed button {
+    border: 0;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    width: 170px;
+    height: 50px; 
+    background: rgba(255,159,18,1);
+    border-radius: 4px;
+    margin-top: 25px;
+}
+.sendNeed p {
+    margin-left: 209px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+}
